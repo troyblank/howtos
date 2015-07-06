@@ -26,7 +26,7 @@ exports.decrypt = function (encrypted) {
     var decipher = crypto.createDecipheriv(algorithm, password, encrypted.iv),
         dec;
 
-    decipher.setAuthTag(encrypted.tag);
+    decipher.setAuthTag(encrypted.tag.type === 'Buffer' ? new Buffer(encrypted.tag.data) : encrypted.tag);
     dec = decipher.update(encrypted.content, 'hex', 'utf8');
     dec += decipher.final('utf8');
     return dec;
