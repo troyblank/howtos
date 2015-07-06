@@ -1,0 +1,20 @@
+{
+    "name": "encryptRawCredentials",
+    "version": "1.0.0",
+    "main": "",
+    "scripts": {
+        "test": "echo \"Error: no text specified\" && exit 1"
+    },
+    "dependencies": {
+        "mkdirp": "0.5.1"
+    },
+    "devDependencies": {
+        "grunt": "0.4.5",
+        "grunt-mocha-test": "0.12.7",
+        "grunt-jslint": "1.1.14",
+        "load-grunt-config": "0.17.1",
+        "sinon": "1.14.1"
+    },
+    "author": "Troy Blank",
+    "license": "BSD-3-Clause"
+}
